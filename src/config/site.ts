@@ -226,7 +226,7 @@ export const reels: Reel[] = [
   {
     title: "Kitchen",
     subtitle: "The full transformation",
-    poster: reelKitchenPoster ?? galleryKitchen,
+    poster: galleryKitchen,
     videoUrl: (reelKitchenPointer as AssetPointer).url,
   },
   {
