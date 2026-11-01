@@ -70,7 +70,7 @@ export function Gallery() {
       </div>
 
       {/* Lightbox */}
-      {openIndex !== null ? (
+      {openIndex !== null && gallery[openIndex] ? (
         <div
           className="fixed inset-0 z-[70] flex items-center justify-center bg-deep/95 p-4 backdrop-blur-md sm:p-10"
           role="dialog"
