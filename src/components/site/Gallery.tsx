@@ -88,7 +88,7 @@ export function Gallery() {
           <button
             onClick={(e) => {
               e.stopPropagation();
-              setOpenIndex((i) => (i === null ? null : (i + 1) % gallery.length));
+              setOpenIndex((i) => (i === null ? null : (i - 1 + gallery.length) % gallery.length));
             }}
             className="glass-panel absolute top-1/2 left-3 flex size-11 -translate-y-1/2 items-center justify-center rounded-full font-display text-xl text-white transition-colors hover:text-gold sm:left-8"
             aria-label="Previous image"
