@@ -294,3 +294,29 @@
 @utility animate-marquee {
   animation: marquee-x 32s linear infinite;
 }
+
+@utility no-scrollbar {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Custom purple/gold map markers for the service area map */
+.map-pin-wrap {
+  background: transparent;
+  border: 0;
+}
+.map-pin {
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #8b3ee0 0%, #7025c8 60%, #4c1687 100%);
+  border: 2px solid var(--gold-soft);
+  box-shadow: 0 6px 18px oklch(0.35 0.15 298 / 0.55);
+}
+.map-pin-wrap .leaflet-popup-content {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+}
